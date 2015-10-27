@@ -5,12 +5,14 @@ kaptcha - A configuable kaptcha generation engine clone of http://code.google.co
 ## Example
 
 ```java
+// Usage
 @Autowired private Kaptcha kaptcha;
 
 kaptcha.captcha(request, response)
 
 code.equals(kaptcha.getGenerateKey(request))
 
+// Config
 @Configuration
 public class CaptchaConfig {
 
