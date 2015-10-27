@@ -49,7 +49,7 @@ and decided to make my own fork...
     import org.springframework.web.bind.annotation.RequestParam;
     import org.springframework.web.servlet.ModelAndView;
     
-    import com.google.code.kaptcha.servlet.KaptchaExtend;
+    import com.google.code.kaptcha.servlet.Kaptcha;
     
     @Controller
     public class RegisterKaptchaController extends KaptchaExtend {

@@ -16,8 +16,8 @@
     </license>
   </licenses>
   <scm>
-    <url>https://github.com/axet/kaptcha</url>
-    <connection>scm:git:https://github.com/axet/kaptcha</connection>
+    <url>https://github.com/aolu11/kaptcha</url>
+    <connection>scm:git:https://github.com/aolu11/kaptcha</connection>
   </scm>
   
   <distributionManagement>

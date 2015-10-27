@@ -40,7 +40,11 @@ public class WaterRipple extends Configurable implements GimpyEngine
 		WaterFilter waterFilter = new WaterFilter();
 		waterFilter.setAmplitude(1.5f);
 		waterFilter.setPhase(10);
-		waterFilter.setWavelength(2);
+        waterFilter.setWavelength(2);
+        int width = getConfig().getWidth();
+        int height = getConfig().getHeight();
+        int radius = Math.max(width, height);
+        waterFilter.setRadius(radius);
 
 		BufferedImage effectImage = waterFilter.filter(baseImage, null);
 		effectImage = rippleFilter.filter(effectImage, null);
